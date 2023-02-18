@@ -12,7 +12,7 @@ function hideLoading() {
 }
 
 function convert() {
-    const url = `http://api.nbp.pl/api/exchangerates/rates/a/${currency.value}/`;
+    const url = `https://api.nbp.pl/api/exchangerates/rates/a/${currency.value}/`;
 
     const value = parseFloat(document.querySelector("#multiply-value").value);
 
