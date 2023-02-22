@@ -1,10 +1,11 @@
 * {
     box-sizing: border-box;
+    font-family: Nunito, sans-serif;
 }
 
 body {
     font-size: 18px;
-    font-family: Nunito, sans-serif;
+
     color: #343432;
     background: #f7f7f7;
     font-weight: 600;
@@ -22,7 +23,7 @@ body {
     margin-bottom: 40px;
 }
 
-header {
+.page-hdr {
     margin: 20px;
     display: flex;
     align-items: center;
@@ -30,7 +31,7 @@ header {
     gap: 10px;
 }
 
-#logo {
+.logo {
     height: 100px;
     width: 100px;
 }
@@ -44,41 +45,40 @@ h2 {
     margin-bottom: 20px;
 }
 
-form {
+.calc-form {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-form > * {
+.calc-form > * {
     width: 25%;
 }
 
-input[type="number"] {
+.calc-input[type="number"] {
     width: 40%;
 }
 
-input,
-select {
+.calc-input,
+.currency-sel {
     padding: 3px;
     margin: 3px;
-    font-family: Nunito, sans-serif;
     font-size: 14px;
     font-weight: 600;
 }
 
-input:active {
+.calc-input:active {
     border: 2px solid #e6761a;
 }
 
-#convert-btn {
+.convert-btn {
     color: #f7f7f7;
     background-color: #e6761a;
     border: none;
     cursor: pointer;
 }
 
-#result {
+.converted {
     font-weight: 800;
     font-size: 20px;
 }
@@ -112,7 +112,7 @@ input:active {
         margin: auto;
     }
 
-    input[type="number"] {
+    .calc-input[type="number"] {
         width: 200px;
     }
 }
