@@ -11,12 +11,12 @@ function convert() {
     if (isNaN(value)) {
         return alert("Wprowadź poprawną kwotę");
     } else {
-        loader.classList.add("display");
+        loader.classList.toggle("display", true);
         fetch(url)
             .then((response) => response.json())
 
             .then((data) => {
-                loader.classList.remove("display");
+                loader.classList.toggle("display", false);
                 const multiplier = parseFloat(data.rates[0].mid);
                 const converted = parseFloat((value * multiplier).toFixed(2));
                 result.innerText = converted;
