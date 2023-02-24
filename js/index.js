@@ -1,8 +1,8 @@
-const currency = document.querySelector("#currencies");
-const btn = document.querySelector("#convert-btn");
+const currency = document.querySelector("#currencySel");
+const btn = document.querySelector("#convertBtn");
 const result = document.querySelector("#result");
 const loader = document.querySelector("#loading");
-const userValue = document.querySelector("#multiply-value");
+const userValue = document.querySelector("#calcInput");
 
 function convert() {
     const url = `https://api.nbp.pl/api/exchangerates/rates/a/${currency.value}/`;
